@@ -55,7 +55,8 @@ html {font-size: 10px;}
         height: 100vh;
         background: linear-gradient, no-repeat center / cover;
         color: black;
-        align-items: center; }
+        align-items: center; 
+        .dt . about }
 
 .resume a {text-decoration: none; 
          font-family: Work sans-serif;
@@ -69,9 +70,9 @@ html {font-size: 10px;}
          margin-bottom: 2rem; 
          box-shadow: 0 20px 50px rgba(0,0,0,.5);}
 
-.navprimary {color: #003153;
+dl {color:#003153;
         font-family: inter; 
-        font-size: 1.7 rem; 
+        font-size: 16px;
         margin: 2rem; 
-        padding: 0.5em; 
-         }
+        padding: 1em; 
+        box-shadow: 0 10px 30px;  }
