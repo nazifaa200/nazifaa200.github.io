@@ -60,13 +60,18 @@ html {font-size: 10px;}
 .resume a {text-decoration: none; 
          font-family: Work sans-serif;
          color: black;
-         display: inline-block;
          background-color: #ba9af8;
          border-radius: 4px; 
+         border-width: 0.5em;
          font-size: 1.8 rem;
          padding: 0.5em 2em;
          margin-top: 2rem;
          margin-bottom: 2rem; 
-         font color: black;
          box-shadow: 0 20px 50px rgba(0,0,0,.5);}
 
+.navprimary {color: #003153;
+        font-family: inter; 
+        font-size: 1.7 rem; 
+        margin: 2rem; 
+        padding: 0.5em; 
+        box-shadow: 0 10px 20px;   }
