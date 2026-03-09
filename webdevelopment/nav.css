@@ -1,0 +1,29 @@
+
+*{ box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    background-color:#91a3b0;  }
+
+header {display: flex;
+       justify-content: space-between;
+        align-items: center;
+        padding: 30px 10px;
+        flex-direction: row; 
+        height: 10rem; }
+
+.logo {curser: pointer;
+        margin-right: auto; }
+
+.navlinks { list-style: none; }
+
+.navlinks li { display: inline-block;
+                padding: 0px 20px; }
+
+.navlinks li a { transition: all 0.3x ease 0s;
+                 text-decoration: none;
+                color: black;
+                font-family: work sans-serif;
+                font-size:28px; }
+
+.navlinks li a:hover { transition: all 0.3x ease 0s;
+                        color: #003153; }
