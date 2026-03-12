@@ -21,7 +21,7 @@ header {
 
 .navlinks { list-style: none;
            display: flex;
-           gap: 3px;   }
+           gap: 1px;   }
 
 .navlinks li { display: inline-block;
                 padding: 0px 20px;
@@ -61,8 +61,24 @@ nav{background-color:#91a3b0;
 
 .dropdown li a:hover { background: rgb(157, 157, 157); }
 
-@media only screen and (max width: 500px) { nav, .navlinks {flex-direction: column;
+@media only screen and (max width: 500px) {nav,.navlinks {flex-direction: column;
                                                             width: 200%; } .dropdown {position: relative;}}
 
 span {font-size: 20px;
         color: black;  }
+
+.box {width: 150px; 
+      height: 150px;
+      font-size: 8em; 
+      text-align: center; }
+
+#box1 {background-color:#003153; }
+
+.container {display: flex; 
+         flex-direction: column;
+         justify-content: space-around;
+         height: 70vh;   
+         padding: 60px; 
+         flex-wrap: wrap; 
+         align-content: center; 
+         column-gap: 1em;   }
