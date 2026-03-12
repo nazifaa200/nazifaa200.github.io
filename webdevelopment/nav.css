@@ -2,28 +2,65 @@
 *{ box-sizing: border-box;
     margin: 0;
     padding:0;
-    background-color:#91a3b0;  }
+    text-decoration: none; 
+    font-family: Work sans-serif;
+    color: #003153;    }
 
-header {display: flex;
-       justify-content: space-between;
+header {
+        justify-content: space-around;
         align-items: center;
         padding: 30px 10px;
         flex-direction: row; 
-        height: 10rem; }
+        height: 100vh;
+        width: 100%;
+        background-color:#003153;   }
 
-.logo {curser: pointer;
-        margin-right: auto; }
+.logo {cursor: pointer;
+        margin-right: auto;  }
 
-.navlinks { list-style: none; }
+.navlinks { list-style: none;
+           display: flex;
+           gap: 16px;   }
 
 .navlinks li { display: inline-block;
-                padding: 0px 20px; }
+                padding: 0px 20px;
+                position: relative; }
 
 .navlinks li a { transition: all 0.3x ease 0s;
                  text-decoration: none;
                 color: black;
                 font-family: work sans-serif;
-                font-size:28px; }
+                font-size:28px;
+                display: block;
+                padding: 24px 16px;   }
 
 .navlinks li a:hover { transition: all 0.3x ease 0s;
-                        color: #003153; }
+                       background-color: rgb(112, 156, 187); }
+
+nav{background-color:#91a3b0;
+   display: flex; 
+   justify-content: space-around;
+   align-items: center;   }
+
+.logo { }
+
+.dropdown {list-style: none; 
+        font-weight: 600;
+        width: 100%;
+        position: absolute; 
+        text-align: center;
+        background-color: rgb(112, 156, 187); 
+        display: none; }
+
+.navlinks, .dropdown { list-style: none; 
+                        font-weight: 600; }
+
+.navlinks li:hover .dropdown {display: block; }
+
+.dropdown li a:hover { background: rgb(157, 157, 157); }
+
+@media only screen and (max width: 500px) { nav, .navlinks {flex-direction: column;
+                                                            width: 200%; } .dropdown {position: relative;}}
+
+span {font-size: 20px;
+        color: black;  }
