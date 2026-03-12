@@ -10,7 +10,7 @@ Description: My website template
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Starter Template</title>
+    <title>Navigation bar</title>
   
     <!-- Link to external CSS for styling --> 
     <link rel="stylesheet" href="nav.css">
@@ -19,12 +19,18 @@ Description: My website template
 <body> 
 
 <header> 
-<img src="logo.png" alt="Site Logo">
 <nav>
+<img src="logo.png" alt="Site Logo">
     <ul class="navlinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html">Projects <span>▼</span></a>
+            <ul class="dropdown">
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul> 
+        </li>
         <li><a href="reflection.html">Reflection</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
