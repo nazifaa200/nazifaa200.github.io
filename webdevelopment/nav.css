@@ -14,7 +14,7 @@ header {
         padding: 30px 10px;
         flex-direction: row; 
         height: 25vh;
-        width: 100%;  }
+        width: 100%; /*Full width*/   }
 
 .logo {cursor: pointer;
         margin-right: auto;  }
@@ -39,10 +39,12 @@ header {
                        background-color: rgb(112, 156, 187); }
 
 nav{background-color:#91a3b0;
-   display: flex; 
+   display: flex;
+   flex-direction: wrap; 
    justify-content: space-around;
    align-items: center;
-   width: 100%; /*Full width*/    }
+   width: 100%; /*Full width*/ 
+   position: fixed;  }
 
 .logo { }
 
