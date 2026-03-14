@@ -4,16 +4,17 @@
 Name: Nazifa Ahmed
 Date: 2/11/2026
 Course: Web Design and Development 
-Description: My website template  
+Description: The website home page  
 -->
 <head> 
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Starter Template</title>
+    <title>Home Page</title>
   
     <!-- Link to external CSS for styling --> 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 
 <style> body {background-color: #91a3b0;}  
 body {text-align: center;
@@ -22,26 +23,47 @@ div {background-color: #003153;
     text-align: center;
     align-items: center; }  
 h1{color: white;
-    font-size: 28px;
+    font-size: 38px;
     font-family: Work sans-serif;}
 h2{color: white;
     font-size: 25px;
     font-family: Work sans-serif;}
 p{color: white; 
-    font-size: 18px;
-    font-family: inter;}
+    font-size: 20px;
+    font-family: inter;
+    text-indent: 40px;}
 blockquote{color: black;
           font-size: 18px;  
         font-family: Work sans-serif}
 footer p{color: black;
-        font-size: 16px;
+        font-size: 13px;
         font-family: Work sans-serif;}
 
 </style> 
 </head>
 
 <body> 
-<section id="hero">
+
+<header> 
+<nav>
+<img src="logo.png" alt="Site Logo">
+    <ul class="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects <span>▼</span></a>
+            <ul class="dropdown">
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul> 
+        </li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<section id="hero1">
     <div class="container">
         <div class="info">
     <h1> Nazifa Ahmed Portfolio </h1>
@@ -51,14 +73,13 @@ footer p{color: black;
     <a href="#">Contact Me</a>
         </div>
     </div> 
-
-<header> 
-</header>
+<br>
+<br>
 <blockquote> "Your old site is the best prototype of your new site" - Hoa Loranger </blockquote>
-     
+<br> 
 <footer> 
     <p> Nazifa Ahmed </p> 
-    <p> 3/2/2026 </p>
+    <p> 3/12/2026 </p>
 </footer>
 </section>
 </body>
