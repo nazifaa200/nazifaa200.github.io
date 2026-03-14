@@ -13,45 +13,69 @@ Description: About page for website portfolio
 
     <!-- Link to external CSS for styling -->  
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 
-<style> body {background-color: #91a3b0;
-            text-align: center; }  
+<style> body {background-color: #003153;
+              text-align: center; }  
         h1 { font-family: Work sans-serif;
-            font-size: 28px;
-            color: black;     }
+            font-size: 38px;
+            color: white;     }
         p { font-family: inter;
-            font-size: 18px;
-            color: black;}
+            font-size: 20px;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            text-indent: 40px;
+            text-align: center;   }
         footer { font-family:Work sans-serif;
-                color: black;   }
+                 font-size: 13px;
+                color: white;
+                text-align: center;  }
+        header {width: 100%; /*Full width*/ }
+        
 </style> 
 </head>
 
 <body> 
 <section id="about"> 
-<header>
-    <h1>About Me</h1>
+     
+<header> 
+<nav>
+<img src="logo.png" alt="Site Logo">
+    <ul class="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects <span>▼</span></a>
+            <ul class="dropdown">
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul> 
+        </li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<br>
 </header>
+<br>
+ <h1>About Me</h1> 
 <p> My bachelor’s degree is in Childhood Education from Hunter College and I am currently in a graduate program at the University of Missouri. The Master’s degree is for Learning Technologies in the Information Science and Learning Technologies program. The program takes approximately two years to complete and I am expected to complete it December of 2026. This graduate program is all online, the classes are available remotely. This Learning Technologies and Design program is for those who plan to design and create learning experiences. This degree helps build instructional design skills to help users have the best experiences online. The courses teach research methods, web development, and effective instruction for all types of environments. This can be practiced in corporate, university, k-12, and non-profit environments. Students in these courses are taught how to create and design user interface experiences. Virtual reality and game based learning is also a part of some of the courses. 
 </p>   
-
-<dl class="navprimary">
-    <dt>Home</dt>
-    <dt>About</dt>
-    <dt>Projects</dt>
-    <dt>Contact</dt>
-</dl>
 
 <br>
     <div class="resume"> 
     <a href="Ahmedresume.pdf">Download Resume</a>
     </div>
-
+<br>
+<br>
 <br>
 
 <footer> 
-    <p> Nazifa Ahmed </p>
-    <p> 3/2/2026 </p>
+    <p>Nazifa Ahmed 
+     <br>
+     3/14/26
+    </p> 
 </footer> 
 </section>
 </body>
