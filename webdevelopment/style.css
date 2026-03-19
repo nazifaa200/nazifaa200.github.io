@@ -81,9 +81,11 @@ html {font-family: Work sans-serif;
             justify-content: space-around;
             gap: 1rem;  }
 
-.profile { padding: 40px; 
+.profile { padding: 30px; 
            margin: 0.3rem;
-        box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+           box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+           background-color: #023f6b; 
+           color: white; }
 
 .aboutinfo {flex: 1;  }
 
@@ -92,7 +94,8 @@ img.responsive {max-width: 100%; /* Prevents image from verflowing container */
                         display: block; /* Removes extra space below image */}
 
 #video { /*override other styles to make responsive */ 
-       width: 100% !important; 
+        width: 100% !important; 
         height: 100% !important; 
-        border-radius: 8px;  }
-
+        border-radius: 8px;
+        color: white; 
+        font-family: Work sans-serif;  }
