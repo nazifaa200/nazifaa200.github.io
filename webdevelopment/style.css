@@ -99,3 +99,13 @@ img.responsive {max-width: 100%; /* Prevents image from verflowing container */
         border-radius: 8px;
         color: white; 
         font-family: Work sans-serif;  }
+@media print {
+        @page {margin: 1in; /*1 inch on all sides*/}
+        /* HIDE UNWANTED ELEMENTS */
+        header {display: none !important;}
+        .profile, .resume {display: none;} 
+        /* GLOBAL TYPOGRAPHY RESET*/
+        p {font-family:Georgia, 'Times New Roman', Times, serif; color: black !important; font-size: 18pt; line-height: 20pt; }
+        /* SPECIFICS */
+        h1 {color: black !important; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 23pt; line-height:20pt;} 
+        footer {color: black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15pt; line-height:20pt;}}
