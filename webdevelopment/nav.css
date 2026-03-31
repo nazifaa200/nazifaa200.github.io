@@ -95,3 +95,10 @@ span {font-size: 20px;
        align-content: center; 
        column-gap: 1em;
        text-align: center; }
+
+.icontext {font-size: 13px; 
+        display: inline-flex; /*Align icon and text horizontally */
+        align-items: center;  
+        gap: 5px;
+        padding:10px; 
+        text-align: center; }
