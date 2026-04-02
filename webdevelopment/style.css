@@ -109,3 +109,111 @@ img.responsive {max-width: 100%; /* Prevents image from verflowing container */
         /* SPECIFICS */
         h1 {color: black !important; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 23pt; line-height:20pt;} 
         footer {color: black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15pt; line-height:20pt;}}
+
+.boxc {display: flex; 
+       flex-direction: column;
+       justify-content: space-around; 
+       flex-wrap: wrap;
+       box-sizing: content-box; 
+       width: 1200px;
+       padding-top: 4em; 
+       padding-right: 6em; 
+       padding-bottom: 4em; 
+       padding-left: 6em;
+       margin-left: 80px; 
+       margin-right: 80px; 
+       margin-top: 50px; 
+       margin-bottom: 50px; 
+       border-style: solid; 
+       border-width: 1px; 
+       border-color: black; 
+       background-color: #023f6b;
+       flex-wrap: wrap; 
+       align-content: center; 
+       column-gap: 1em;
+       text-align: center;}
+
+form { display: flex; 
+       flex-direction: column;
+       justify-content: space-around; 
+       flex-wrap: wrap;
+       box-sizing: content-box; 
+       width: 1000px;
+       padding-top: 4em; 
+       padding-right: 6em; 
+       padding-bottom: 4em; 
+       padding-left: 6em;
+       margin-left: 80px; 
+       margin-right: 80px; 
+       margin-top: 50px; 
+       margin-bottom: 50px; 
+       border-style: solid; 
+       border-width: 1px; 
+       border-color: black; 
+       background-color: #023f6b;
+       flex-wrap: wrap; 
+       align-content: center; 
+       column-gap: 1em;
+       text-align: center;
+       color: white; 
+       align-items: center; }
+
+/* Input fields */ 
+#name {background-color: white;
+        width: 160px; 
+        padding: 6px;
+        color: black; 
+        font-size: 13px; 
+        font-family: Work sans-serif;}
+
+#title {background-color: white;
+        width: 100px; 
+        padding: 6px;
+        color: black; 
+        font-size: 13px; 
+        font-family: Work sans-serif;}
+
+#email {background-color: white;
+        width: 180px; 
+        padding: 6px;
+        color: black; 
+        font-size: 13px; 
+        font-family: Work sans-serif;}
+
+#message {background-color: white;
+        width: 200px; 
+        height: 100px; 
+        padding: 6px;
+        color: black; 
+        font-size: 13px; 
+        font-family: Work sans-serif;}
+
+label {color: white;
+        font-family: Work sans-serif;
+        font-size: 20px;  }
+
+.radio {color: white;
+        font-family: Work sans-serif;
+        font-size: 20px;  }
+
+#submit {text-decoration: none; 
+         font-family: Work sans-serif;
+         font-size: 23px; 
+         color: black;
+         background-color: #ba9af8;
+         border-radius: 4px; 
+         border-width: 0.1em;
+         font-size: 15px;
+         padding: 0.5em 2em;
+         margin-top: 1rem;
+         margin-bottom: 1rem; 
+         margin-left: 1em; 
+         margin-right: 1em;
+         box-shadow: 0 20px 50px rgba(0,0,0,.5);
+         align-items: center; }
+
+/*Responsive adjustments */ 
+@media (max-width:600px) {form {padding: 15px;} input, textarea, button {font-size: 14px;}}
+
+/*Responsive Breakpoints */
+@media (max-width:768px) {nav {flex-direction:column;} body {flex-direction:column;}}
