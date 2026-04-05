@@ -8,8 +8,7 @@
 
 body {background-color: #003153; }
 
-header {
-        justify-content: space-around;
+header {justify-content: space-around;
         align-items: center;
         padding: 30px 10px;
         flex-direction: row; 
@@ -46,7 +45,6 @@ nav{background-color:#91a3b0;
    width: 100%; /*Full width*/ 
    position: fixed;  }
 
-
 .dropdown {list-style: none; 
         font-weight: 600;
         width: 100%;
@@ -55,20 +53,9 @@ nav{background-color:#91a3b0;
         background-color: rgb(112, 156, 187); 
         display: none; }
 
-.navlinks, .dropdown { list-style: none; 
-                        font-weight: 600; }
-
 .navlinks li:hover .dropdown {display: block; }
 
 .dropdown li a:hover { background: rgb(157, 157, 157); }
-
-@media only screen and (max-width: 500px) {nav,.navlinks {flex-direction: column;
-                                                            width: 200%; } .dropdown {position: relative;}}
-
-/* Media query for tablets */
-@media (max-width: 768px) {article, aside {flex: 1 1 100%; /*Stack vertically*/}}
-/*Media query for very small deices */
-@media (max-width: 480px) {header, footer {font-size: 0.9rem; padding: 0.5rem;}}
 
 span {font-size: 20px;
         color: black;  }
@@ -103,3 +90,16 @@ span {font-size: 20px;
         padding:10px; 
         text-align: center; }
 
+@media only screen and (max-width: 600px) {nav,.navlinks {flex-direction: column;
+                                                            width: 100%; } .dropdown {position: relative;}}
+
+/* Media query for tablets */
+@media (max-width: 768px) {article, aside {flex: 1 1 100%; /*Stack vertically*/}}
+/*Media query for very small devices */
+@media (max-width: 600px) {header, footer {font-size: 0.9rem; padding: 0.5rem;}}
+
+/*Responsive adjustments */ 
+@media (max-width:600px) {form {padding: 15px;} input, textarea, button {font-size: 14px;}}
+
+/*Responsive Breakpoints */
+@media (max-width:768px) {nav {flex-direction:column;} body {flex-direction:column;}}
