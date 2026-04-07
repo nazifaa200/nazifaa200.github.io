@@ -10,7 +10,7 @@ Description: My website template
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Navigation</title>
+    <title>Contact page</title>
   
     <!-- Link to external CSS for styling --> 
     <link rel="stylesheet" href="style.css">
@@ -25,6 +25,9 @@ Description: My website template
             font-size: 13px;
             color: white; 
             text-align: center;  }
+    .boxc label {color: white;
+        font-family: Work sans-serif;
+        font-size: 20px;  }
     </style>
 </head>
 
@@ -32,7 +35,10 @@ Description: My website template
 <header> 
 <nav>
 <img src="logo.png" alt="Site Logo">
-    <ul class="navlinks">
+<label for="toggler"><i class="fa fa-bars"></i></label>
+<input type="checkbox" id="toggler" name="" > 
+<div class="menu">
+    <ul class="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects <span>▼</span></a>
@@ -45,6 +51,7 @@ Description: My website template
         <li><a href="reflection.html">Reflection</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+    </div>
 </nav>
 </header>
 
