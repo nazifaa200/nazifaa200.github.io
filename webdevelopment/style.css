@@ -1,7 +1,8 @@
 
 footer p{color: white;
         font-size: 13px;
-        font-family: Work sans-serif;}
+        font-family: Work sans-serif;
+        grid-area:footer; }
 
 * {padding: 0;
    margin: 0.3rem;
@@ -46,10 +47,11 @@ html {font-family: Work sans-serif;
                 color: black;
                 box-shadow: 0 20px 50px rgba(0,0,0,.5);}
 
-#about { width: 95%;
-        height: 100vh;
-        color: white;
-        align-items: center;  }
+#about {color: white;
+        align-items: center; 
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;  }
 
 .resume a {text-decoration: none; 
          font-family: Work sans-serif;
@@ -69,28 +71,30 @@ html {font-family: Work sans-serif;
         border: 1px solid black;
         border-radius: 6px;  }
 
-.container2 {padding: 0 15px; 
-            display: flex;
-            flex-wrap: wrap; 
-            align-items: center; 
-            justify-content: space-around;
-            gap: 1rem;  }
+.container2 {display: grid;
+            gap: 1rem;
+            padding: 1rem; 
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "profile info";  }
 
 .profile { padding: 30px; 
            margin: 0.3rem;
            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
            background-color: #023f6b; 
-           color: white; }
+           color: white;
+           grid-area:profile; }
 
-.aboutinfo {flex: 1;  }
+.aboutinfo { align-items: center;
+             grid-area: info;
+        color:white;  }
 
 img.responsive {max-width: 100%; /* Prevents image from verflowing container */
                         height: auto; /* Maintains aspect ratio */
                         display: block; /* Removes extra space below image */}
 
 #video { /*override other styles to make responsive */ 
-        width: 100% !important; 
-        height: 100% !important; 
+        width: 100%; 
+        height: 100%; 
         border-radius: 8px;
         color: white; 
         font-family: Work sans-serif;  }
@@ -156,35 +160,43 @@ form { display: flex;
 
 /* Input fields */ 
 #name {background-color: white;
-        width: 160px; 
+        width: 350px; 
+        height: 50px; 
         padding: 6px;
         color: black; 
         font-size: 13px; 
         font-family: Work sans-serif;}
+#name, label {color:white;
+        font-size:20px;  }
 
 #title {background-color: white;
-        width: 100px; 
-        padding: 6px;
+        width: 150px; 
+        height: 50px; 
+        padding: 5px;
         color: black; 
         font-size: 13px; 
         font-family: Work sans-serif;}
 
+#title, label {color:white; 
+        font-size:20px; }
+
 #email {background-color: white;
-        width: 180px; 
+        width: 380px; 
+        height: 50px; 
         padding: 6px;
         color: black; 
         font-size: 13px; 
         font-family: Work sans-serif;}
 
 #message {background-color: white;
-        width: 200px; 
-        height: 100px; 
+        width: 400px; 
+        height: 250px; 
         padding: 6px;
         color: black; 
         font-size: 13px; 
         font-family: Work sans-serif;}
 
-label {color: white;
+.boxc label {color: white;
         font-family: Work sans-serif;
         font-size: 20px;  }
 
@@ -208,3 +220,9 @@ label {color: white;
          box-shadow: 0 20px 50px rgba(0,0,0,.5);
          align-items: center; }
 
+
+
+
+
+
+        
