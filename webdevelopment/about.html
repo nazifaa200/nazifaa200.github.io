@@ -37,18 +37,29 @@ Description: About page for website portfolio
                 text-align: center; 
                 display: wrap;
                 flex-wrap: wrap;  }
-        header {width: 100%; /*Full width*/}  
+        header {width: 100%; /*Full width*/ }  
         figcaption {color: white; 
-                   font-family: Work sans-serif;} 
+                   font-family: Work sans-serif;}  
+        .experience li {color: white;
+                    font-size:18px;
+                    font-family:inter;  
+                    list-style:none; 
+                    text-align:start;
+                    padding:4px; 
+                    margin:22px; 
+                    text-indent:25px;  }
 </style> 
 </head>
 
 <body> 
 <section id="about"> 
-<header> 
+<header>     
 <nav>
 <img src="logo.png" alt="Site Logo">
-    <ul class="navlinks">
+<label for="toggler"><i class="fa fa-bars"></i></label>
+<input type="checkbox" id="toggler" name="" > 
+<div class="menu">
+    <ul class="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects <span>▼</span></a>
@@ -59,21 +70,14 @@ Description: About page for website portfolio
             </ul> 
         </li>
         <li><a href="reflection.html">Reflection</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li> 
     </ul>
+</div>
 </nav>
+
 </header>
 
 <div class="container2"> 
-
-<div class="aboutinfo">
-  <h1>About Nazifa Ahmed</h1> 
-   <p> My bachelor’s degree is in Childhood Education from Hunter College and I am currently in a graduate program at the University of Missouri. The Master’s degree is for Learning Technologies in the Information Science and Learning Technologies program. The program takes approximately two years to complete and I am expected to complete it December of 2026. This graduate program is all online, the classes are available remotely. This Learning Technologies and Design program is for those who plan to design and create learning experiences. This degree helps build instructional design skills to help users have the best experiences online. The courses teach research methods, web development, and effective instruction for all types of environments. This can be practiced in corporate, university, k-12, and non-profit environments. Students in these courses are taught how to create and design user interface experiences. Virtual reality and game based learning is also a part of some of the courses. 
-   </p>   
-   <div class="resume"> 
-    <a href="Ahmedresume.pdf">Download Resume</a>
-    </div>
-   </div>
 
 <div class="profile"> 
   <img src="media/photo.jpg" alt="Image for portfolio" id="photo"/> 
@@ -85,13 +89,37 @@ Description: About page for website portfolio
   <figcaption>Resume video</figcaption>
   </figure>
   </div>
+
+<div class="aboutinfo">
+  <h1>About Nazifa Ahmed</h1> 
+   <p> My bachelor’s degree is in Childhood Education from Hunter College and I am currently in a graduate program at the University of Missouri. The Master’s degree is for Learning Technologies in the Information Science and Learning Technologies program. The program takes approximately two years to complete and I am expected to complete it December of 2026. This graduate program is all online, the classes are available remotely. This Learning Technologies and Design program is for those who plan to design and create learning experiences. This degree helps build instructional design skills to help users have the best experiences online. The courses teach research methods, web development, and effective instruction for all types of environments. This can be practiced in corporate, university, k-12, and non-profit environments. Students in these courses are taught how to create and design user interface experiences. Virtual reality and game based learning is also a part of some of the courses. 
+   </p>
+<div class="experience">
+ <ul> 
+    <li>Skills that I have worked on: 
+        <ul>
+          <li>Wireframing</li>
+          <li>Prototyping</li>
+          <li>Figma</li>
+          <li>Adobe Illustrate and Photoshop</li>
+        </ul>
+    </li>
+ </ul>
+</div>
+   <br>
+   <br>
+   <div class="resume"> 
+    <a href="Ahmedresume.pdf">Download Resume</a>
+    </div>
+   </div>
 </div>
 
 <br>
 <br>
 <br>
 <footer> 
-    <p> Phone: xxx-xxx-xxx  Email:nazifaa200@gmail.com</p>
+    <p class="icontext"> <i class="fa-solid fa-phone" style="color: rgb(79, 196, 218);"></i> Phone: xxx-xxx-xxx </p>
+    <p class="icontext"> <i class="fa-solid fa-envelope" style="color: rgb(79, 196, 218);"></i> Email: nazifaa200@gmail.com </p>
 </footer> 
 </section>
 </body>
