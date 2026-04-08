@@ -16,7 +16,7 @@ Description: My website template
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-    <script src="https://kit.fontawesome.com/896414070d.js" crossorigin="anonymous"></script>
+
     <style> 
     h1 {color: white;
         font-family: Work sans-serif;
@@ -35,8 +35,12 @@ Description: My website template
 <header> 
 <nav>
 <img src="logo.png" alt="Site Logo">
-<label for="toggler"><i class="fa fa-bars"></i></label>
-<input type="checkbox" id="toggler" name="toggler" > 
+<input type="checkbox" id="menu-toggle" class="menu-toggle" > 
+<label for="menu-toggle" class="menu-btn"> 
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
 <div class="menu">
     <ul class="list">
         <li><a href="index.html">Home</a></li>

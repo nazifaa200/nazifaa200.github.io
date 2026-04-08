@@ -16,9 +16,9 @@ Description: The website home page
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-    <script src="https://kit.fontawesome.com/896414070d.js" crossorigin="anonymous"></script>
-
-<style> body {background-color: #91a3b0;}  
+   
+<style> body {background-color: #91a3b0;} 
+        nav {background-color:#91a3b0;}
 body {text-align: center;
     align-items: center;}
 div {background-color: #003153;
@@ -49,7 +49,15 @@ footer p{color: black;
 <header> 
 <nav>
 <img src="logo.png" alt="Site Logo">
-    <ul class="navlinks">
+
+<input type="checkbox" id="menu-toggle" class="menu-toggle" > 
+<label for="menu-toggle" class="menu-btn"> 
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+<div class="menu">
+    <ul class="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects <span>▼</span></a>
@@ -62,6 +70,7 @@ footer p{color: black;
         <li><a href="reflection.html">Reflection</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+    </div>
 </nav>
 </header>
 
@@ -72,6 +81,7 @@ footer p{color: black;
     <h2> Welcome to my portfolio on the UX Design case studies that I have worked on </h2>
     <p> The purpose of this portfolio is to demonstrate the skills that I have built in my courses. My graduate program have given me the opportunities to practice and use the skills that I was taught. My goal at the end of this program is to be able to work in the UX Design field. My background is in education where I have worked with younger students. I hope to use my experience in education to help me understand users and the problems that they may face. One of the most important parts of UX Design is viewing problems and solutions from the users’ point of view. When I worked with younger students I had to try to understand their perspective and create content that applies to them specifically. 
     </p>
+    
     <a href="#">Contact Me</a>
         </div>
     </div> 

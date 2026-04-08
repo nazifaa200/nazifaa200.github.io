@@ -14,6 +14,7 @@ Description: My website template
   
     <!-- Link to external CSS for styling --> 
     <link rel="stylesheet" href="nav.css">
+    <script src="https://kit.fontawesome.com/896414070d.js" crossorigin="anonymous"></script>
 
 <style> body{ background-color: #003153;} 
         h1 { font-family: Work sans-serif;
@@ -31,8 +32,9 @@ Description: My website template
             text-indent: 40px; }
         footer p{ font-family:Work sans-serif;
                 color: white; 
-                font-size: 13px;  }
-        .firstr::first-letter {font-size: 160%; color:#ba9af8; }
+                font-size: 13px; 
+                text-align: center;  }
+        .firstr::first-letter {font-size: 160%; color:#ba9af8; text-indent:0; }
 /*Apply indentation only to paragraphs with the 'indent' class*/ .indent {text-indent:60px;/*Adjust space as needed*/}
 </style>
 </head>
@@ -41,7 +43,14 @@ Description: My website template
 <header> 
 <nav>
 <img src="logo.png" alt="Site Logo">
-    <ul class="navlinks">
+<input type="checkbox" id="menu-toggle" class="menu-toggle" > 
+<label for="menu-toggle" class="menu-btn"> 
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+<div class="menu">
+    <ul class="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects <span>▼</span></a>
@@ -54,6 +63,7 @@ Description: My website template
         <li><a href="reflection.html">Reflection</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+    </div>
 </nav>
 </header>
 
@@ -79,9 +89,10 @@ Description: My website template
 <br>
 <br>
 <br>
+
 <footer> 
-    <p>Nazifa Ahmed </p>
-    <p>3/19/2026</p>
+    <p class="icontext"> <i class="fa-solid fa-phone" style="color: rgb(79, 196, 218);"></i> Phone: xxx-xxx-xxx </p>
+    <p class="icontext"> <i class="fa-solid fa-envelope" style="color: rgb(79, 196, 218);"></i> Email: nazifaa200@gmail.com </p>
 </footer> 
 </body>
 

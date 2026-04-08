@@ -8,36 +8,14 @@
 
 body {background-color: #003153; }
 
+
+/* Nav bar */
 header {justify-content: space-around;
         align-items: center;
         padding: 30px 10px;
         flex-direction: row; 
         height: 25vh;
         width: 100%; /*Full width*/   }
-
-.logo {cursor: pointer;
-        margin-right: auto;  }
-
-.menu { list-style: none;
-        display: flex;
-        gap: 1px;
-        background-color:#91a3b0; 
-        font-weight: bold;   }
-
-.menu li { display: inline-block;
-                padding: 0px 20px;
-                position: relative; }
-
-.menu li a { transition: color 0.3s ease, transform 0.3s ease;
-                text-decoration: none;
-                color: black;
-                font-family: Work sans-serif;
-                font-size:28px;
-                display: block;
-                padding: 24px 16px;   }
-
-.menu li a:hover { transition: color 0.3s ease, transform 0.3s ease;
-                background-color: rgb(112, 156, 187); }
 
 nav{background-color:#91a3b0;
    display: flex;
@@ -47,29 +25,75 @@ nav{background-color:#91a3b0;
    align-items: center;
    width: 100%; /*Full width*/ 
    position: fixed; 
-   padding: 15px;  }
+   padding: 15px;
+   z-index:1000;    }
+
+.logo {cursor: pointer;
+        margin-right: auto;  }
+
+
+ /*Hamburger */ 
+.menu-toggle {display:none; }
+
+.menu-btn {display:none; 
+        flex-direction:column; 
+        cursor:pointer; }
+
+.menu-btn span {width:25px; 
+        height:3px; 
+        background:black;
+        margin:4px 0; }
+
+.menu-toggle:checked ~ .menu {display:flex; }
+
+
+/*Menu in navbar */ 
+.menu { list-style: none;
+        display: flex;
+        gap: 1px;
+        background-color:#91a3b0; 
+        font-weight: bold;   }
+
+.list {display: flex; 
+        list-style: none; 
+        gap:25px;
+        flex-direction: row; 
+        align-items:center;  }
+
+.menu li {position: relative; } 
+
+.menu li a {color: black;
+        font-size:28px;
+        display: block;
+        padding: 24px 16px;   }
+
+
+/* Hover and dropdown. */
+.menu li a:hover { transition: color 0.3s ease, transform 0.3s ease;
+                background-color: rgb(112, 156, 187); }
 
 .dropdown {list-style: none; 
         font-weight: 600;
-        width: 100%;
-        position: absolute; 
+        min-width: 150px;
+        position: absolute;
         text-align: center;
         background-color: rgb(112, 156, 187); 
+        top:100%; 
+        left:0; 
         display: none; }
 
-.menu li:hover .dropdown {display: block; }
 
-.dropdown li a:hover { background: rgb(157, 157, 157); }
+.menu li:hover .dropdown {display: block;}
+
+.dropdown li a:hover {background:rgb(128, 176, 211); }
 
 span {font-size: 20px;
         color: black;  }
 
-.list {display: flex; 
-        list-style: none; 
-        gap:25px; }
 
-#toggler {display:none;}
 
+
+/*Reflection page */
 .boxr {display: flex; 
        flex-direction: column;
        justify-content: space-around; 
@@ -100,17 +124,34 @@ span {font-size: 20px;
         padding:10px; 
         text-align: center; }
 
+
+
+
 @media screen and (max-width: 768px) {
-        .menu {width:100%; 
-                max-height: 0; 
-                overflow:hidden; }
+        .menu-btn {display:flex; }
 
-        label {display:inline-flex; }
-
-        #toggler:checked~.menu {max-height: 100%;}
+        .menu {width:100%;  
+                position:absolute; 
+                flex-direction:column; 
+                top:70px; 
+                right:0; 
+                background:#91a3b0;
+                display:none;  }
 
         .list {flex-direction:column; 
                 align-items:center;
-                padding: 20px;}
-        p {flex-wrap:wrap; }
-        .menu li:hover .dropdown {display: none; } }
+                padding: 20px;
+                width:100%;  }
+
+        .list li {width:100%;
+                text-align:center;  }
+
+        .list li a {padding:20px; 
+                font-size:22px; }
+
+        .menu-toggle:checked ~ .menu {display:flex; }
+
+        .dropdown li {display:none; } }
+
+
+        
