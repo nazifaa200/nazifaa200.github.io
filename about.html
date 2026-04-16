@@ -14,8 +14,8 @@ Description: About page for website portfolio
     <!-- Link to external CSS for styling -->  
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-    <script src="https://kit.fontawesome.com/896414070d.js" crossorigin="anonymous"></script>
-
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  
 <style> body {background-color: #003153;
               text-align: center;
             display: flex; 
@@ -56,8 +56,12 @@ Description: About page for website portfolio
 <header>     
 <nav>
 <img src="logo.png" alt="Site Logo">
-<label for="toggler"><i class="fa fa-bars"></i></label>
-<input type="checkbox" id="toggler" name="" > 
+<input type="checkbox" id="menu-toggle" class="menu-toggle" > 
+<label for="menu-toggle" class="menu-btn"> 
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
 <div class="menu">
     <ul class="list">
         <li><a href="index.html">Home</a></li>
@@ -106,21 +110,23 @@ Description: About page for website portfolio
     </li>
  </ul>
 </div>
+
    <br>
    <br>
    <div class="resume"> 
     <a href="Ahmedresume.pdf">Download Resume</a>
     </div>
    </div>
+   
 </div>
 
 <br>
 <br>
 <br>
 <footer> 
-    <p class="icontext"> <i class="fa-solid fa-phone" style="color: rgb(79, 196, 218);"></i> Phone: xxx-xxx-xxx </p>
-    <p class="icontext"> <i class="fa-solid fa-envelope" style="color: rgb(79, 196, 218);"></i> Email: nazifaa200@gmail.com </p>
-</footer> 
+   <p class="footerp"> <img src="media/iconphone.png" alt="phone icon" class="iconf">Phone :xxx-xxx-xxx </p>
+    <p class="footerp"> <img src="media/iconemail.png" alt="email icon" class="iconf">Email: nazifaa200@gmail.com </p>
+    </footer>
 </section>
 </body>
 
