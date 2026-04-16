@@ -84,7 +84,9 @@ html {font-family: Work sans-serif;
         background-color: #023f6b; 
         color: white;
         grid-area:profile;
-        gap: 8px; }
+        gap: 8px; 
+        padding-top:5rem;
+        padding-bottom:5rem;  }
 
 .aboutinfo { align-items: center;
         grid-area: info;
@@ -116,7 +118,7 @@ img.responsive {max-width: 100%; /* Prevents image from verflowing container */
 
 
 /* Contact page */
-.boxc {display: flex; 
+#boxc {display: flex; 
        flex-direction: column;
        justify-content: space-around; 
        flex-wrap: wrap;
@@ -130,10 +132,6 @@ img.responsive {max-width: 100%; /* Prevents image from verflowing container */
        margin-right: 80px; 
        margin-top: 50px; 
        margin-bottom: 50px; 
-       border-style: solid; 
-       border-width: 1px; 
-       border-color: black; 
-       background-color: #023f6b;
        flex-wrap: wrap; 
        align-content: center; 
        column-gap: 1em;
@@ -172,7 +170,8 @@ form { display: flex;
         color: black; 
         font-size: 13px; 
         font-family: Work sans-serif;}
-#name, label {color:white;
+
+label {color:white;
         font-size:20px;  }
 
 #title {background-color: white;
@@ -182,9 +181,6 @@ form { display: flex;
         color: black; 
         font-size: 13px; 
         font-family: Work sans-serif;}
-
-#title, label {color:white; 
-        font-size:20px; }
 
 #email {background-color: white;
         width: 380px; 
@@ -201,10 +197,6 @@ form { display: flex;
         color: black; 
         font-size: 13px; 
         font-family: Work sans-serif;}
-
-.boxc label {color: white;
-        font-family: Work sans-serif;
-        font-size: 20px;  }
 
 .radio {color: white;
         font-family: Work sans-serif;
@@ -229,7 +221,6 @@ form { display: flex;
 
 
 /* Projects page */ 
-
 /*project1*/ 
 .hproject {font-family: Work sans-serif;
         font-size:38px; 
