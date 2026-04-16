@@ -25,7 +25,8 @@ nav{background-color:#91a3b0;
    align-items: center;
    width: 100%; /*Full width*/ 
    position: fixed; 
-   padding: 15px;
+   top:0; 
+   padding: 10px;
    z-index:1000;    }
 
 .logo {cursor: pointer;
@@ -159,7 +160,8 @@ span {font-size: 20px;
 
         .menu-toggle:checked ~ .menu {display:flex; }
 
-        .dropdown li {display:none; } }
+        .dropdown li {display:none; } 
+       }
 
 
         
