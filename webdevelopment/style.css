@@ -232,7 +232,7 @@ label {color:white;
         color: black;
         text-align:center;  }
 
-.papp {font-family: Work sans-serif;
+.papp {font-family: Inter;
         font-size:20px; 
         color: black; 
         text-indent: 40px;} 
@@ -240,10 +240,6 @@ label {color:white;
 #ad1 {width: 220px; 
         height: 370px; 
         border: 1px solid black;  }
-
-#ad2 {width: 220px; 
-        height: 370px; 
-        border: 1px solid black; }
 
 #ad3 {width: 220px; 
         height: 370px; 
@@ -260,7 +256,7 @@ label {color:white;
         color: black; 
         text-align:center;  }
 
-.pweb {font-family: Work sans-serif;
+.pweb {font-family: Inter;
         font-size:20px; 
         color: black; 
         text-indent: 40px;}
@@ -268,10 +264,6 @@ label {color:white;
 #wd1 {width:420px; 
         height: 398px;
         border: 1px solid black;  }
-
-#wd2 {width:420px; 
-        height: 398px;
-        border: 1px solid black;}
 
 #webdesign {border-radius:10px; 
         border: 1px solid black; 
@@ -284,7 +276,7 @@ label {color:white;
         color: black; 
         text-align:center;  }
 
-.pdigital {font-family: Work sans-serif;
+.pdigital {font-family: Inter;
         font-size:20px; 
         color: black; 
         text-indent: 40px;}
@@ -318,8 +310,25 @@ label {color:white;
         .profile, .aboutinfo {padding: 0.5em; } 
         
         #projects {padding:3rem; 
+                margin:1rem;
                 grid-template-columns: 1fr; 
-                justify-items:center; } }
+                justify-items:center; } 
+
+        .happ {font-size: 28px;} 
+        .papp {font-size: 20px;} 
+        .hweb {font-size: 28px;}
+        .pweb {font-size:20px;}
+        .hdigital {font-size:28px;}
+        .pdigital {font-size:20px;} 
+
+        #ad1, #ad3 {width:200px; 
+                height:350px;}
+        
+        #wd1 {width:400px; 
+                height: 380px;} 
+        #dd {width: 420px; 
+                 height: 310px;} } 
+
 
 
 
