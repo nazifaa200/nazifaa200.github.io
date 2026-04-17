@@ -322,12 +322,13 @@ label {color:white;
         .pdigital {font-size:20px;} 
 
         #ad1, #ad3 {width:200px; 
-                height:350px;}
+                height:350px;
+                align-items: center;}
         
-        #wd1 {width:400px; 
-                height: 380px;} 
-        #dd {width: 420px; 
-                 height: 310px;} } 
+        #wd1 {width:380px; 
+                height: 360px;} 
+        #dd {width: 380px; 
+                 height: 295px;} } 
 
 
 
