@@ -100,7 +100,7 @@ span {font-size: 20px;
        justify-content: space-around; 
        flex-wrap: wrap;
        box-sizing: content-box; 
-       width: 1200px;
+       width: 70%;
        padding-top: 4em; 
        padding-right: 6em; 
        padding-bottom: 4em; 
@@ -137,6 +137,8 @@ span {font-size: 20px;
 
 
 @media screen and (max-width: 768px) {
+
+        /*nav */
         .menu-btn {display:flex; }
 
         .menu {width:100%;  
@@ -161,6 +163,15 @@ span {font-size: 20px;
         .menu-toggle:checked ~ .menu {display:flex; }
 
         .dropdown li {display:none; } 
+
+        /*reflection page*/
+        .boxr {width:60%;
+                align-content:center;
+                align-items:center; 
+                padding: 3em;  }
+        .boxr p{font-size:15px; }
+        
+
        }
 
 

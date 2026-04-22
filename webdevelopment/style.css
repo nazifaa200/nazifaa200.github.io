@@ -157,7 +157,7 @@ img.responsive {max-width: 100%; /* Prevents image from verflowing container */
        justify-content: space-around; 
        flex-wrap: wrap;
        box-sizing: content-box; 
-       width: 1200px;
+       width: 80%;
        padding-top: 4em; 
        padding-right: 6em; 
        padding-bottom: 4em; 
@@ -176,7 +176,7 @@ form { display: flex;
        justify-content: space-around; 
        flex-wrap: wrap;
        box-sizing: content-box; 
-       width: 1000px;
+       width: 80%;
        padding-top: 4em; 
        padding-right: 6em; 
        padding-bottom: 4em; 
@@ -338,15 +338,34 @@ label {color:white;
 
 
 @media screen and (max-width:768px) {
+
+        /*Home page*/
+        blockquote {font-size:14px; }
+
+        .container {margin:20px;
+                align-items:center; }
+        .container h1{font-size:35px; }
+        .container h2{font-size:25px; }
+        .container p{font-size:20px; }
+        table {font-size:15px;
+                width:60%;  }
+
+
+        /*About page */
         .container2 {grid-template-columns: 1fr; 
-        grid-template-areas: "profile" "info"; }
+        grid-template-areas: "info" "profile"; }
+        .container2 p {font-size:15px; }
+        .experience li{font-size:15px;  }
+        figcaption {font-size:12px; }
 
         .profile, .aboutinfo {padding: 0.5em; } 
         
+
+        /*project page*/
         #projects {padding:3rem; 
                 margin:1rem;
                 grid-template-columns: 1fr; 
-                justify-items:center; } 
+                align-content: center;} 
 
         .happ {font-size: 28px;} 
         .papp {font-size: 20px;} 
@@ -357,16 +376,26 @@ label {color:white;
 
         #ad1, #ad3 {width:200px; 
                 height:350px;
-                align-items: center;}
+                align-content: center;}
         
         #wd1 {width:380px; 
-                height: 360px;} 
+                height: 360px;
+                align-content: center;} 
         #dd {width: 380px; 
-                 height: 295px;} 
+                height: 295px;
+                align-content: center;} 
                 
-        #appdesign, #webdesign, #digitaldesign {background-color:#c1a2ff;} 
-       
-        }
+        #appdesign, #webdesign, #digitaldesign {background-color:#c1a2ff;
+                align-content: center;} 
+
+
+        /*contact page */        
+        #boxc {width:60%; }
+        #name {width:340px; }
+        #email {width:350px; }
+        #message {width: 390px; 
+                height: 200px; }
+}
 
 
 
