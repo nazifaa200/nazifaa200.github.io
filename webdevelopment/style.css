@@ -1,6 +1,5 @@
 
 * {padding: 0;
-   margin: 0.2rem;
    box-sizing: border-box;  }
 
 footer p{color: white;
@@ -12,7 +11,8 @@ html {font-family: Work sans-serif;
 
 /* Home page */
 #hero1 {width: 100%;
-        height: 100vh;
+        min-height: 100vh;
+        height:auto; 
         color: white;
         align-items: center; }
 
@@ -26,7 +26,8 @@ html {font-family: Work sans-serif;
             text-align: center;    }
 
 .container h1 { font-size: 3rem;
-                margin-bottom: 1rem; }
+                margin-bottom: 1rem;
+                padding:10px;  }
 
 .container h2 { font-size: 1.5rem;
                 margin-bottom: 2rem; }
@@ -46,6 +47,39 @@ html {font-family: Work sans-serif;
                 margin-bottom: 2rem; 
                 color: black;
                 box-shadow: 0 20px 50px rgba(0,0,0,.5);}
+
+table {display:table; 
+        margin:2rem auto; 
+        width:90%; 
+        max-width:600px; 
+        color:white; 
+        font-size: 18px; 
+        font-family: Inter;
+        border:2px solid black; 
+        border-collapse:collapse; 
+        overflow:hidden; 
+        margin-left:auto; 
+        margin-right:auto; 
+        min-width:500px; }    
+
+table, th, td, caption {color:white; }
+
+td {padding: 10px; 
+        text-align:left;  
+        border:1px solid black; }
+
+th {padding:10px; 
+        text-align:center; 
+        border:2px solid black;
+        background-color:#173a52; }
+
+caption {font-size:20px;
+        padding:8px;  }
+
+tr:nth-child(2), tr:nth-child(4), tr:nth-child(6) {background-color:#017fd9}
+
+.table-wrapper {width:100%; 
+        overflow-x:auto; }
 
 
 /* About page */
@@ -330,7 +364,10 @@ label {color:white;
         #dd {width: 380px; 
                  height: 295px;} 
                 
-        #appdesign, #webdesign, #digitaldesign {background-color:#c1a2ff;} } 
+        #appdesign, #webdesign, #digitaldesign {background-color:#c1a2ff;} 
+       
+        }
+
 
 
 
