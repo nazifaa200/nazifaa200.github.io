@@ -255,16 +255,22 @@ label {color:white;
 
 
 /* Projects page */ 
+/* Custom styles for all <h1 or h2> elements */
 /*project1*/ 
-.hproject {font-family: Work sans-serif;
+.hproject {font-family: "Sansita Swashed", system-ui;
         font-size:38px; 
         color: white; 
-        text-align:center; }
+        text-align:center; 
+        letter-spacing: 8px;
+        text-transform:uppercase; 
+        text-shadow:5px 5px 5px rgb(10, 123, 203);  }
 
-.happ {font-family: Work sans-serif;
+.happ {font-family: "Sansita Swashed", system-ui;
         font-size:28px; 
-        color: black;
-        text-align:center;  }
+        color: rgb(56, 6, 136);
+        text-align:center; 
+        text-decoration:underline; 
+        letter-spacing: 3px;  }
 
 .papp {font-family: Inter;
         font-size:20px; 
@@ -285,10 +291,12 @@ label {color:white;
         padding:1rem;  }
          
 /*project 2*/ 
-.hweb {font-family: Work sans-serif;
+.hweb {font-family: "Sansita Swashed", system-ui;
         font-size:28px; 
-        color: black; 
-        text-align:center;  }
+        color: rgb(56, 6, 136); 
+        text-align:center; 
+        text-decoration:underline;
+        letter-spacing: 3px;  }
 
 .pweb {font-family: Inter;
         font-size:20px; 
@@ -305,10 +313,12 @@ label {color:white;
         padding:1rem;}
 
 /*project 3*/ 
-.hdigital {font-family: Work sans-serif;
+.hdigital {font-family: "Sansita Swashed", system-ui;
         font-size:28px; 
-        color: black; 
-        text-align:center;  }
+        color: rgb(56, 6, 136); 
+        text-align:center;
+        text-decoration:underline;
+        letter-spacing: 3px;   }
 
 .pdigital {font-family: Inter;
         font-size:20px; 
