@@ -348,7 +348,10 @@ label {color:white;
         .container h2{font-size:25px; }
         .container p{font-size:20px; }
         table {font-size:15px;
-                width:60%;  }
+                width:60%; 
+                min-width: unset;   }
+        .table-wrapper {padding: 0 10px; }
+        th, td {padding:8px; }
 
 
         /*About page */
