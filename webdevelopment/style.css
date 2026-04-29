@@ -255,9 +255,9 @@ label {color:white;
 
 
 /* Projects page */ 
-/* Custom styles for all <h1 or h2> elements */
+/* Custom Google Fonts for all <h1 or h2> elements */
 /*project1*/ 
-.hproject {font-family: "Sansita Swashed", system-ui;
+.hproject {font-family: "Sansita Swashed", system-ui; /*custom Google Font*/
         font-size:38px; 
         color: white; 
         text-align:center; 
@@ -265,11 +265,11 @@ label {color:white;
         text-transform:uppercase; 
         text-shadow:5px 5px 5px rgb(10, 123, 203);  }
 
-.happ {font-family: "Sansita Swashed", system-ui;
+.happ {font-family: "Sansita Swashed", system-ui; /*custom Google Font*/
         font-size:28px; 
         color: rgb(56, 6, 136);
         text-align:center; 
-        text-decoration:underline; 
+        text-decoration:underline;
         letter-spacing: 3px;  }
 
 .papp {font-family: Inter;
@@ -291,7 +291,7 @@ label {color:white;
         padding:1rem;  }
          
 /*project 2*/ 
-.hweb {font-family: "Sansita Swashed", system-ui;
+.hweb {font-family: "Sansita Swashed", system-ui; /*custom Google Font*/
         font-size:28px; 
         color: rgb(56, 6, 136); 
         text-align:center; 
@@ -313,7 +313,7 @@ label {color:white;
         padding:1rem;}
 
 /*project 3*/ 
-.hdigital {font-family: "Sansita Swashed", system-ui;
+.hdigital {font-family: "Sansita Swashed", system-ui; /*custom Google Font*/
         font-size:28px; 
         color: rgb(56, 6, 136); 
         text-align:center;
