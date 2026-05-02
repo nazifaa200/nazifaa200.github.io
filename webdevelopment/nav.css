@@ -128,7 +128,10 @@ span {font-size: 20px;
 
 .footerp {padding:5px 0; 
         margin:0; 
-        align-items: center;}
+        align-items: center;
+        text-align:center; }
+footer {text-align:center; 
+        align-items:center; }
 
 
 
