@@ -109,7 +109,6 @@ tr:nth-child(2), tr:nth-child(4), tr:nth-child(6) {background-color:#025590}
 
 .container2 {display: grid;
         gap: 1rem;
-        padding: 1rem; 
         grid-template-columns: 1fr 2fr;
         grid-template-areas: "profile info";  }
 
@@ -350,7 +349,7 @@ label {color:white;
         .container {margin:20px;
                 align-items:center; }
         .container h1{font-size:35px; }
-        .container h2{font-size:25px; }
+        .container h2{font-size:23px; }
         .container p{font-size:20px; }
         table {font-size:15px;
                 width:60%; 
