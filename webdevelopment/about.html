@@ -22,8 +22,6 @@ Description: About page
   
 <style> body {background-color: #003153;
             text-align: center;
-            display: flex; 
-            flex-wrap: wrap; /*Allows items to wrap on smaller screens */
             padding: 1rem; }  
         h1 { font-family: "Sansita Swashed", system-ui;
             font-size: 38px;
@@ -36,12 +34,15 @@ Description: About page
             text-indent: 40px;
             text-align: center;   }
         .firsta::first-letter {font-size: 160%; color:#ba9af8; text-indent:0; }
-        footer { font-family: Work sans-serif;
+        footer {font-family: Work sans-serif;
                 font-size: 13px;
                 color: white;
-                text-align: center; 
                 display: flex;
-                flex-wrap: wrap;  }
+                flex-wrap: wrap; 
+                align-items:center; 
+                justify-content:center; 
+                gap:20px; 
+                width:100%;  }
         header {width: 100%; /*Full width*/ }  
         figcaption {color: white; 
                    font-family: Work sans-serif;}  
@@ -160,7 +161,7 @@ Description: About page
 <footer> 
    <p class="footerp"> <img src="media/iconphone.png" alt="phone icon" class="iconf">Phone :xxx-xxx-xxx </p>
     <p class="footerp"> <img src="media/iconemail.png" alt="email icon" class="iconf">Email: nazifaa200@gmail.com </p>
-    </footer>
+</footer>
 </section>
 </body>
 
