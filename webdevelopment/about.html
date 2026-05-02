@@ -2,9 +2,9 @@
 <html lang="en-US">
 <!-- 
 Name: Nazifa Ahmed
-Date: 4/17/2026
+Date: 5/1/2026
 Course: Web Design and Development 
-Description: The website About page 
+Description: About page 
 -->
 <head> 
     <meta charset="utf-8"> 
@@ -21,11 +21,11 @@ Description: The website About page
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
   
 <style> body {background-color: #003153;
-              text-align: center;
+            text-align: center;
             display: flex; 
             flex-wrap: wrap; /*Allows items to wrap on smaller screens */
             padding: 1rem; }  
-        h1 { font-family: Work sans-serif;
+        h1 { font-family: "Sansita Swashed", system-ui;
             font-size: 38px;
             color: white;     }
         p { font-family: inter;
@@ -35,11 +35,12 @@ Description: The website About page
             text-align: center;
             text-indent: 40px;
             text-align: center;   }
+        .firsta::first-letter {font-size: 160%; color:#ba9af8; text-indent:0; }
         footer { font-family: Work sans-serif;
-                 font-size: 13px;
+                font-size: 13px;
                 color: white;
                 text-align: center; 
-                display: wrap;
+                display: flex;
                 flex-wrap: wrap;  }
         header {width: 100%; /*Full width*/ }  
         figcaption {color: white; 
@@ -52,6 +53,24 @@ Description: The website About page
                     padding:4px; 
                     margin:22px; 
                     text-indent:25px;  }
+        .transcript {background-color:#ffffff;
+         color: #003153;
+         max-width: 300px;
+         margin: 40px auto;
+         padding: 20px;
+         border-radius: 10px;
+         text-align: left;
+         font-family: "Work Sans", sans-serif;
+         line-height: 1.6;}
+       .transcript h2 { margin-bottom: 10px;
+         font-size: 24px;
+         color: #003153; }
+       .transcript p {color: #003153;
+         font-size: 18px;
+         padding: 0;
+         text-indent: 0;
+         text-align: left;}
+            
 </style> 
 </head>
 
@@ -92,16 +111,27 @@ Description: The website About page
   <figure>
   <video controls width="180" height="260"> 
     <source src="media/video.mp4" type="video/mp4" id="video"> 
+    <track src="videocaptions.vtt"
+    kind="captions"
+    srclang="en"
+    label="English"
+    default>
     Your browser does not support this video tag. 
   </video>
   <figcaption>Resume video</figcaption>
   </figure>
+  <div class="transcript">
+    <h2>Video Transcript</h2>
+    <p> Hi, my name is Nazifa Ahmed. I'm currently a graduate student at the University of Missouri in the Learningn Technologies program. I have done my undergrad in childhood
+   education, and I hope to use both of my experiences to help me grow my career in the instructional design field. With this website, I want to create an online portfolio where I showcase all the skills that I
+   have worked on in the courses from this portfolio. </p>
+  </div>
   </div>
 
 <div class="aboutinfo">
   <h1>About Nazifa Ahmed</h1> 
-   <p> My bachelor’s degree is in Childhood Education from Hunter College and I am currently in a graduate program at the University of Missouri. The Master’s degree is for Learning Technologies in the Information Science and Learning Technologies program. The program takes approximately two years to complete and I am expected to complete it December of 2026. This graduate program is all online, the classes are available remotely. This Learning Technologies and Design program is for those who plan to design and create learning experiences. This degree helps build instructional design skills to help users have the best experiences online. The courses teach research methods, web development, and effective instruction for all types of environments. This can be practiced in corporate, university, k-12, and non-profit environments. Students in these courses are taught how to create and design user interface experiences. Virtual reality and game based learning is also a part of some of the courses. 
-   </p>
+   <p class="firsta"> My bachelor’s degree is in Childhood Education from Hunter College and I am currently in a graduate program at the University of Missouri. The Master’s degree is for Learning Technologies in the Information Science and Learning Technologies program. The program takes approximately two years to complete and I am expected to complete it December of 2026. This graduate program is all online, the classes are available remotely. This Learning Technologies and Design program is for those who plan to design and create learning experiences. This degree helps build instructional design skills to help users have the best experiences online. The courses teach research methods, web development, and effective instruction for all types of environments. This can be practiced in corporate, university, k-12, and non-profit environments. Students in these courses are taught how to create and design user interface experiences. Virtual reality and game based learning is also a part of some of the courses. 
+   </p> 
 <div class="experience">
  <ul> 
     <li>Skills that I have worked on: 

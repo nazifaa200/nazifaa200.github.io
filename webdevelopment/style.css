@@ -76,7 +76,7 @@ th {padding:10px;
 caption {font-size:20px;
         padding:8px;  }
 
-tr:nth-child(2), tr:nth-child(4), tr:nth-child(6) {background-color:#017fd9}
+tr:nth-child(2), tr:nth-child(4), tr:nth-child(6) {background-color:#025590}
 
 .table-wrapper {width:100%; 
         overflow-x:auto; }
@@ -158,14 +158,9 @@ img.responsive {max-width: 100%; /* Prevents image from verflowing container */
        flex-wrap: wrap;
        box-sizing: content-box; 
        width: 80%;
-       padding-top: 4em; 
-       padding-right: 6em; 
-       padding-bottom: 4em; 
-       padding-left: 6em;
-       margin-left: 80px; 
-       margin-right: 80px; 
-       margin-top: 50px; 
-       margin-bottom: 50px; 
+       max-width:900px; 
+       padding-top: 4em 6em; 
+       margin: 50px auto; 
        flex-wrap: wrap; 
        align-content: center; 
        column-gap: 1em;
@@ -372,6 +367,8 @@ label {color:white;
         figcaption {font-size:12px; }
 
         .profile, .aboutinfo {padding: 0.5em; } 
+
+        .transcript p{font-size:15px; }
         
 
         /*project page*/
