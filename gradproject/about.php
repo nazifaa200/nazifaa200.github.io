@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- 
+Name: Nazifa Ahmed
+Date: 5/1/2026
+Course: Web Design and Development 
+Description: About page 
+-->
+<head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+
+    <!-- Custom font from Google Fonts applied here --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Link to external CSS for styling -->  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  
+<style> body {background-color: #003153;
+            text-align: center;
+            padding: 1rem; }  
+        h1 { font-family: "Sansita Swashed", system-ui;
+            font-size: 38px;
+            color: white;     }
+        p { font-family: inter;
+            font-size: 20px;
+            color: white;
+            padding: 50px;
+            margin:30px; 
+            text-align: center;
+            text-indent: 40px;
+            text-align: center;   }
+        .firsta::first-letter {font-size: 160%; color:#ba9af8; text-indent:0; }
+        footer {font-family: Work sans-serif;
+                font-size: 13px;
+                color: white;
+                align-items:center; 
+                justify-content:center; 
+                text-align:center; 
+                width:100%;  }
+        header {width: 100%; /*Full width*/ }  
+        figcaption {color: white; 
+                   font-family: Work sans-serif;}  
+        .experience li {color: white;
+                    font-size:18px;
+                    font-family:inter;  
+                    list-style:none; 
+                    text-align:start;
+                    padding:4px; 
+                    margin:22px; 
+                    text-indent:25px;  }
+        .transcript {background-color:#ffffff;
+         color: #003153;
+         max-width: 300px;
+         margin: 40px auto;
+         padding: 20px;
+         border-radius: 10px;
+         text-align: left;
+         font-family: "Work Sans", sans-serif;
+         line-height: 1.6;}
+       .transcript h2 { margin-bottom: 10px;
+         font-size: 18px;
+         color: #003153; }
+       .transcript p {color: #003153;
+         font-size: 14px;
+         padding: 0;
+         text-indent: 0;
+         text-align: left;}
+            
+</style> 
+</head>
+
+<body> 
+<section id="about"> 
+
+ <?php include "header.php";?>
+
+
+<div class="container2"> 
+
+<div class="profile"> 
+  <img src="media/photo.jpg" alt="Image for portfolio" id="photo"/> 
+  <figure>
+  <video controls width="180" height="260"> 
+    <source src="media/video.mp4" type="video/mp4" id="video"> 
+    <track src="videocaptions.vtt"
+    kind="captions"
+    srclang="en"
+    label="English"
+    default>
+    Your browser does not support this video tag. 
+  </video>
+  <figcaption>Resume video</figcaption>
+  </figure>
+  <div class="transcript">
+    <h2>Video Transcript</h2>
+    <p> Hi, my name is Nazifa Ahmed. I'm currently a graduate student at the University of Missouri in the Learningn Technologies program. I have done my undergrad in childhood
+   education, and I hope to use both of my experiences to help me grow my career in the instructional design field. With this website, I want to create an online portfolio where I showcase all the skills that I
+   have worked on in the courses from this portfolio. </p>
+  </div>
+  </div>
+
+<div class="aboutinfo">
+  <h1>About Nazifa Ahmed</h1> 
+   <p class="firsta"> My bachelor’s degree is in Childhood Education from Hunter College and I am currently in a graduate program at the University of Missouri. The Master’s degree is for Learning Technologies in the Information Science and Learning Technologies program. The program takes approximately two years to complete and I am expected to complete it December of 2026. This graduate program is all online, the classes are available remotely. This Learning Technologies and Design program is for those who plan to design and create learning experiences. This degree helps build instructional design skills to help users have the best experiences online. The courses teach research methods, web development, and effective instruction for all types of environments. This can be practiced in corporate, university, k-12, and non-profit environments. Students in these courses are taught how to create and design user interface experiences. Virtual reality and game based learning is also a part of some of the courses. 
+   </p> 
+<br>
+<div class="experience">
+ <ul> 
+    <li>Skills that I have worked on: 
+        <ul>
+          <li>Wireframing</li>
+          <li>Prototyping</li>
+          <li>Figma</li>
+          <li>Adobe Illustrate and Photoshop</li>
+        </ul>
+    </li>
+ </ul>
+</div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <div class="resume"> 
+    <a href="Ahmedresume.pdf">Download Resume</a>
+    </div>
+   </div>
+   
+</div>
+
+<br>
+<br>
+<br>
+
+ <?php include "footer.php";?> 
+ 
+</section>
+</body>
+
+</html>

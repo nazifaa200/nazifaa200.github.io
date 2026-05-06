@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- 
+Name: Nazifa Ahmed
+Date: 5/1/2026
+Course: Web Design and Development 
+Description: Contact page  
+-->
+<head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact page</title>
+  
+    <!-- Custom font from Google Fonts applied here --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Link to external CSS for styling --> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+
+    <style> 
+    h1 {color: white;
+        font-family: Work sans-serif;
+        font-size: 30pt;  }
+    footer {font-family: Work sans-serif;
+            font-size: 13px;
+            color: white; 
+            text-align: center;  }
+    .boxc label {color: white;
+        font-family: Work sans-serif;
+        font-size: 20px;  }
+    </style>
+</head>
+
+<body> 
+
+ <?php include "header.php";?>
+
+<section id="boxc">
+<form action="https://formspree.io/f/xwvwqjrd" method="POST">
+<h1> Contact </h1>
+<br>
+<br>
+<div>
+    <label for="name"> Name: </label>
+    <input type="text" name="name" id="name" placeholder="Type full name" required/>
+</div>
+<br>
+<div>
+    <label for="title"> Title </label>
+    <input type="text" name="title" id="title" placeholder="e.g. Mr., Ms., . ." required/>
+</div>
+<br>
+<div>
+    <label for="email"> Email: </label>
+    <input type="email" name="email" id="email" placeholder="Type in email" required/>
+</div>
+<br>
+<div>
+    <label for="message"> Message </label>
+   <input type="textarea" name="message" id="message" placeholder="Message to leave..." required /> 
+</div>
+<br>
+<br>
+<div> 
+    <p class="radio"> Receive notifications by email? </p>
+    <label for="updatesyes"> Yes </label>
+    <input type="radio" id="updatesyes" name="updates" value="yes" required/>
+    <label for="updatesno"> No </label>
+    <input type="radio" id="updatesno" name="updates" value="no" checked/>
+</div>
+<br>
+<br> 
+<input type="submit" id="submit" required/>
+
+</form>
+</section>
+
+ <?php include "footer.php";?> 
+
+</body>
+
+</html>

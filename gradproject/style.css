@@ -1,0 +1,415 @@
+
+* {padding: 0;
+   box-sizing: border-box;  }
+
+footer p{color: white;
+        font-size: 13px;
+        font-family: Work sans-serif; }
+
+html {font-family: Work sans-serif;
+      font-size: 18px; }
+
+/* Home page */
+#hero1 {width: 100%;
+        min-height: 100vh;
+        height:auto; 
+        color: white;
+        align-items: center; }
+
+.container {width:90%;
+            height: 100%; 
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            text-align: center;    }
+
+.container h1 { font-size: 3rem;
+                margin-bottom: 1rem;
+                padding:10px;  }
+
+.container h2 { font-size: 1.5rem;
+                margin-bottom: 2rem; }
+
+.container p { font-size: 1.2rem; 
+                max-width: 70%;
+                margin: 0 auto; }
+
+.container a { text-decoration: none; 
+                font-family: Work sans-serif;
+                display: inline-block;
+                background-color: #ba9af8;
+                border-radius: 4px; 
+                font-size: 15px;
+                padding: 0.5em 2em;
+                margin-top: 2rem;
+                margin-bottom: 2rem; 
+                color: black;
+                box-shadow: 0 20px 50px rgba(0,0,0,.5);}
+
+table {display:table; 
+        margin:2rem auto; 
+        width:90%; 
+        max-width:600px; 
+        color:white; 
+        font-size: 18px; 
+        font-family: Inter;
+        border:2px solid black; 
+        border-collapse:collapse; 
+        overflow:hidden; 
+        margin-left:auto; 
+        margin-right:auto; 
+        min-width:500px; }    
+
+table, th, td, caption {color:white; }
+
+td {padding: 10px; 
+        text-align:left;  
+        border:1px solid black; }
+
+th {padding:10px; 
+        text-align:center; 
+        border:2px solid black;
+        background-color:#173a52; }
+
+caption {font-size:20px;
+        padding:8px;  }
+
+tr:nth-child(2), tr:nth-child(4), tr:nth-child(6) {background-color:#025590}
+
+.table-wrapper {width:100%; 
+        overflow-x:auto; }
+
+
+/* About page */
+#about {color: white;
+        align-items: center; 
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;  }
+
+.resume a {text-decoration: none; 
+        font-family: Work sans-serif;
+        color: black;
+        background-color: #ba9af8;
+        border-radius: 4px; 
+        border-width: 0.5em;
+        font-size: 15px;
+        padding: 0.5em 2em;
+        margin-top: 2rem;
+        margin-bottom: 2rem; 
+        box-shadow: 0 20px 50px rgba(0,0,0,.5);
+        align-items: center; }
+
+#photo{ width: 140px; 
+        height: 160px; 
+        border: 1px solid black;
+        border-radius: 6px;  }
+
+.container2 {display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "profile info";  }
+
+.profile {
+        box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        background-color: #023f6b; 
+        color: white;
+        grid-area:profile;
+        gap: 8px; 
+        padding-top:5rem;
+        padding-bottom:5rem;  }
+
+.aboutinfo { align-items: center;
+        grid-area: info;
+        color:white;  }
+
+img.responsive {max-width: 100%; /* Prevents image from verflowing container */
+                        height: auto; /* Maintains aspect ratio */
+                        display: block; /* Removes extra space below image */}
+
+#video { /*override other styles to make responsive */ 
+        width: 100%; 
+        height: 100%; 
+        border-radius: 8px;
+        color: white; 
+        font-family: Work sans-serif;  }
+    
+
+@media print {
+        @page {margin: 1in; /*1 inch on all sides*/}
+        /* HIDE UNWANTED ELEMENTS */
+        header {display: none !important;}
+        .profile, .resume {display: none;} 
+        /* GLOBAL TYPOGRAPHY RESET*/
+        p {font-family:Georgia, 'Times New Roman', Times, serif; color: black !important; font-size: 18pt; line-height: 20pt; }
+        /* SPECIFICS */
+        h1 {color: black !important; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 23pt; line-height:20pt;} 
+        footer {color: black; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15pt; line-height:20pt;}}
+
+
+
+/* Contact page */
+#boxc {display: flex; 
+       flex-direction: column;
+       justify-content: space-around; 
+       flex-wrap: wrap;
+       box-sizing: content-box; 
+       width: 80%;
+       max-width:900px; 
+       padding-top: 4em 6em; 
+       margin: 50px auto; 
+       flex-wrap: wrap; 
+       align-content: center; 
+       column-gap: 1em;
+       text-align: center;}
+
+form { display: flex; 
+       flex-direction: column;
+       justify-content: space-around; 
+       flex-wrap: wrap;
+       box-sizing: content-box; 
+       width: 80%;
+       padding-top: 4em; 
+       padding-right: 6em; 
+       padding-bottom: 4em; 
+       padding-left: 6em;
+       margin-left: 80px; 
+       margin-right: 80px; 
+       margin-top: 50px; 
+       margin-bottom: 50px; 
+       border-style: solid; 
+       border-width: 1px; 
+       border-color: black; 
+       background-color: #023f6b;
+       flex-wrap: wrap; 
+       align-content: center; 
+       column-gap: 1em;
+       text-align: center;
+       color: white; 
+       align-items: center; }
+
+/* Input fields */ 
+#name {background-color: white;
+        width: 350px; 
+        height: 50px; 
+        padding: 6px;
+        color: black; 
+        font-size: 13px; 
+        font-family: Work sans-serif;}
+
+label {color:white;
+        font-size:20px;  }
+
+#title {background-color: white;
+        width: 150px; 
+        height: 50px; 
+        padding: 5px;
+        color: black; 
+        font-size: 13px; 
+        font-family: Work sans-serif;}
+
+#email {background-color: white;
+        width: 380px; 
+        height: 50px; 
+        padding: 6px;
+        color: black; 
+        font-size: 13px; 
+        font-family: Work sans-serif;}
+
+#message {background-color: white;
+        width: 400px; 
+        height: 250px; 
+        padding: 6px;
+        color: black; 
+        font-size: 13px; 
+        font-family: Work sans-serif;}
+
+.radio {color: white;
+        font-family: Work sans-serif;
+        font-size: 20px;  }
+
+#submit {text-decoration: none; 
+         font-family: Work sans-serif;
+         font-size: 23px; 
+         color: black;
+         background-color: #ba9af8;
+         border-radius: 4px; 
+         border-width: 0.1em;
+         font-size: 15px;
+         padding: 0.5em 2em;
+         margin-top: 1rem;
+         margin-bottom: 1rem; 
+         margin-left: 1em; 
+         margin-right: 1em;
+         box-shadow: 0 20px 50px rgba(0,0,0,.5);
+         align-items: center; }
+
+
+
+/* Projects page */ 
+/* Custom Google Fonts for all <h1 or h2> elements */
+/*project1*/ 
+.hproject {font-family: "Sansita Swashed", system-ui; /*custom Google Font*/
+        font-size:38px; 
+        color: white; 
+        text-align:center; 
+        letter-spacing: 8px;
+        text-transform:uppercase; 
+        text-shadow:5px 5px 5px rgb(10, 123, 203);  }
+
+.happ {font-family: "Sansita Swashed", system-ui; /*custom Google Font*/
+        font-size:28px; 
+        color: rgb(56, 6, 136);
+        text-align:center; 
+        text-decoration:underline;
+        letter-spacing: 3px;  }
+
+.papp {font-family: Inter;
+        font-size:20px; 
+        color: black; 
+        text-indent: 40px;} 
+
+#ad1 {width: 220px; 
+        height: 370px; 
+        border: 1px solid black;  }
+
+#ad3 {width: 220px; 
+        height: 370px; 
+        border: 1px solid black; }
+
+#appdesign {border-radius:10px; 
+        border: 1px solid black; 
+        background-color: #c0a1ff; 
+        padding:1rem;  }
+         
+/*project 2*/ 
+.hweb {font-family: "Sansita Swashed", system-ui; /*custom Google Font*/
+        font-size:28px; 
+        color: rgb(56, 6, 136); 
+        text-align:center; 
+        text-decoration:underline;
+        letter-spacing: 3px;  }
+
+.pweb {font-family: Inter;
+        font-size:20px; 
+        color: black; 
+        text-indent: 40px;}
+
+#wd1 {width:420px; 
+        height: 398px;
+        border: 1px solid black;  }
+
+#webdesign {border-radius:10px; 
+        border: 1px solid black; 
+        background-color: #c0a1ff; 
+        padding:1rem;}
+
+/*project 3*/ 
+.hdigital {font-family: "Sansita Swashed", system-ui; /*custom Google Font*/
+        font-size:28px; 
+        color: rgb(56, 6, 136); 
+        text-align:center;
+        text-decoration:underline;
+        letter-spacing: 3px;   }
+
+.pdigital {font-family: Inter;
+        font-size:20px; 
+        color: black; 
+        text-indent: 40px;}
+
+#dd {width: 460px; 
+        height: 350px; 
+        border: 1px solid black; }
+
+#digitaldesign {border-radius:10px; 
+        border: 1px solid black; 
+        background-color: #c0a1ff; 
+        padding:1rem;}
+
+/*grid layout for project page */
+#projects {display:grid; 
+        padding: 4rem;   
+        margin: 2rem;      
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 40px; 
+        grid-row-gap:60px; 
+        align-items:center; }
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+        /*Home page*/
+        blockquote {font-size:14px; }
+
+        .container {margin:20px;
+                align-items:center; }
+        .container h1{font-size:35px; }
+        .container h2{font-size:23px; }
+        .container p{font-size:20px; }
+        table {font-size:15px;
+                width:60%; 
+                min-width: unset;   }
+        .table-wrapper {padding: 0 10px; }
+        th, td {padding:8px; }
+
+
+        /*About page */
+        .container2 {grid-template-columns: 1fr; 
+        grid-template-areas: "info" "profile"; }
+        .container2 p {font-size:15px; }
+        .experience li{font-size:15px;  }
+        figcaption {font-size:12px; }
+
+        .profile, .aboutinfo {padding: 0.5em; } 
+
+        .transcript p{font-size:15px; }
+        
+
+        /*project page*/
+        #projects {padding:3rem; 
+                margin:1rem;
+                grid-template-columns: 1fr; 
+                align-content: center;} 
+
+        .happ {font-size: 28px;} 
+        .papp {font-size: 20px;} 
+        .hweb {font-size: 28px;}
+        .pweb {font-size:20px;}
+        .hdigital {font-size:28px;}
+        .pdigital {font-size:20px;} 
+
+        #ad1, #ad3 {width:200px; 
+                height:350px;
+                align-content: center;}
+        
+        #wd1 {width:380px; 
+                height: 360px;
+                align-content: center;} 
+        #dd {width: 380px; 
+                height: 295px;
+                align-content: center;} 
+                
+        #appdesign, #webdesign, #digitaldesign {background-color:#c1a2ff;
+                align-content: center;} 
+
+
+        /*contact page */        
+        #boxc {width:60%; }
+        #name {width:340px; }
+        #email {width:350px; }
+        #message {width: 390px; 
+                height: 200px; }
+}
+
+
+
+
+
+
+
+        
